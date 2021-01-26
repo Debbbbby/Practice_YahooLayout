@@ -1,0 +1,104 @@
+@import url("font-face.css");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  width: 100%;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+.container-wide {
+  margin: 0 auto;
+  max-width: 1244px;
+}
+
+.clearfix {
+  clear: both;
+}
+
+ul {
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+#fixed-top {
+  max-height: 30px;
+  background-color: #250944;
+}
+
+#fixed-top #nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0;
+  font-size: 13px;
+}
+
+#fixed-top a {
+  padding: 8px 11px;
+  color: white;
+}
+
+#fixed-top a:nth-child(1) {
+  padding-left: 0;
+}
+
+#fixed-top a:nth-child(1) i {
+  font-size: 16px;
+  margin-right: 4px;
+}
+
+#func-top {
+  max-height: 120px;
+  background-color: #D4F1F5;
+}
+
+#func-top .func {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 4.63fr auto;
+      grid-template-columns: 1fr 4.63fr auto;
+  padding: 27px 0 57px 0;
+}
+
+#func-top .logo-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#func-top .logo-name .logo-img {
+  display: inline-block;
+}
+
+#func-top .logo-name img {
+  max-width: 90px;
+  width: auto;
+}
+
+#func-top .logo-name h3 {
+  display: inline-block;
+  margin: 0px 0px 8px 2px;
+  color: #232A32;
+  font-size: 18px;
+  font-family: "NotoSansTC-Medium";
+}
+/*# sourceMappingURL=main.css.map */
