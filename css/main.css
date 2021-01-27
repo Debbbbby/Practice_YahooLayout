@@ -2,6 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  font-family: "NotoSansTC-Thin";
 }
 
 html {
@@ -15,11 +16,6 @@ body {
 
 .container {
   margin: 0 auto;
-  max-width: 1200px;
-}
-
-.container-wide {
-  margin: 0 auto;
   max-width: 1244px;
 }
 
@@ -27,7 +23,13 @@ body {
   clear: both;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 ul {
+  margin: 0;
   padding: 0;
   list-style: none;
 }
@@ -45,8 +47,7 @@ a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0;
-  font-size: 13px;
+  font-size: 12px;
 }
 
 #fixed-top a {
@@ -59,7 +60,7 @@ a {
 }
 
 #fixed-top a:nth-child(1) i {
-  font-size: 16px;
+  font-size: 15px;
   margin-right: 4px;
 }
 
@@ -71,8 +72,8 @@ a {
 #func-top .func {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 4.63fr auto;
-      grid-template-columns: 1fr 4.63fr auto;
+  -ms-grid-columns: .6fr auto 1fr;
+      grid-template-columns: .6fr auto 1fr;
   padding: 27px 0 57px 0;
 }
 
@@ -98,7 +99,190 @@ a {
   display: inline-block;
   margin: 0px 0px 8px 2px;
   color: #232A32;
-  font-size: 18px;
+  font-size: 16px;
   font-family: "NotoSansTC-Medium";
+}
+
+#func-top .input-wrap {
+  display: inline-block;
+  border-style: solid;
+  border-width: thin;
+  border-radius: 3px;
+  border-color: #5CC5E2;
+  height: 36px;
+  width: 550px;
+  padding: 1px;
+}
+
+#func-top input[type="text"] {
+  height: 100%;
+  width: 100%;
+  border: 0;
+  outline-color: #5CC5E2;
+  padding: 13px;
+  font-size: 14px;
+}
+
+#func-top #search {
+  margin-right: 54px;
+}
+
+#func-top #search .search-btn {
+  height: 35px;
+  width: 82px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "NotoSansTC-Medium";
+}
+
+#func-top #search .search-btn.search-prod {
+  margin-right: 6px;
+  background-color: #5CC5E2;
+  color: white;
+  border: 0;
+}
+
+#func-top #search .search-btn.search-store {
+  background-color: #F0EFF5;
+  border-color: #E0DFE5;
+  border-style: solid;
+}
+
+#user-func div {
+  display: inline-block;
+}
+
+#user-func span {
+  color: #4DAAD3;
+  font-size: 13px;
+  font-family: "NotoSansTC-Regular";
+}
+
+#user-func .my-store::after {
+  content: "|";
+  color: #4DAAD3;
+  margin: 0px 2px;
+}
+
+#user-func .icon-user-wrap {
+  display: inline-block;
+  margin: 0px;
+  background-color: #AAADB6;
+  height: 25px;
+  width: 25px;
+  text-align: center;
+}
+
+#user-func .icon-user-wrap .icon-user {
+  color: white;
+}
+
+#user-func .order-wrap .icon-wpforms {
+  color: #4DAAD3;
+  font-size: 22px;
+}
+
+main div.container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: auto 1fr;
+      grid-template-columns: auto 1fr;
+}
+
+#sidebar ul {
+  margin: 15px;
+}
+
+#sidebar ul:last-child {
+  border: 0;
+}
+
+#sidebar ul li:last-child {
+  border-bottom: 1px solid #bbb;
+}
+
+#sidebar ul a {
+  display: inline-block;
+  padding: 6px;
+  width: 100%;
+  height: 100%;
+  font-size: 15px;
+  color: #4D4D4D;
+  font-family: "NotoSansTC-Regular";
+}
+
+#sidebar .category-menu li:last-child {
+  padding-bottom: 20px;
+}
+
+#sidebar .recom h4 {
+  padding: 0px 6px;
+  margin: 0px;
+  color: #60BC97;
+}
+
+#sidebar .pic-ad p {
+  margin: 6px 0px 25px 0px;
+  font-size: 13px;
+  font-family: "NotoSansTC-Regular";
+}
+
+#sidebar .pic-ad li {
+  margin-top: 12px;
+  border-bottom: 1px solid #bbb;
+}
+
+#sidebar .pic-ad li:first-child {
+  margin-top: 0px;
+}
+
+#sidebar .pic-ad li:last-child {
+  border: 0;
+}
+
+#top-carousel .wrap {
+  position: relative;
+}
+
+#top-carousel .img-box {
+  position: relative;
+}
+
+#top-carousel a {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+#top-carousel a.active {
+  display: block;
+}
+
+#top-carousel .carousel-controls {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 56px 1fr 56px;
+      grid-template-columns: 56px 1fr 56px;
+}
+
+#top-carousel .carousel-controls .btn {
+  width: 56px;
+  height: 84px;
+  background-color: rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+}
+
+#top-carousel .carousel-controls .btn.next-btn {
+  -ms-grid-column: 3;
+      grid-column-start: 3;
+}
+
+#top-carousel .carousel-controls i {
+  color: white;
+  font-size: 36px;
 }
 /*# sourceMappingURL=main.css.map */

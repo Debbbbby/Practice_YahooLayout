@@ -7,13 +7,13 @@
     <title>Yahoo!超級商城</title>
 
     <!-- css -->
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/fontello.css">
 </head>
 <body>
     <div id="header">
         <div id="fixed-top">
-            <div class="container-wide">
+            <div class="container">
                 <ul id="nav">
                     <a href="#"><i class="icon-home"></i>首頁</a>
                     <a href="#">購物中心</a>
@@ -26,7 +26,7 @@
             </div>
         </div>
         <div id="func-top">
-            <div class="container-wide">
+            <div class="container">
                 <div class="func">
                     <div class="logo-name">
                         <div class="logo-img">
@@ -35,25 +35,29 @@
                         <h3>超級商城</h3>
                     </div>
                     <div id="search">
-                        <div class="for-search">
-                            <input type="text">
+                        <div class="input-wrap">
+                            <input type="text" placeholder="請輸入 商品 或 商店 關鍵字">
                         </div>
-                        <button class="search-btn search-prod">搜尋商品</button>
-                        <button class="search-btn search-store">搜尋商店</button>
+                        <button type="button" class="search-btn search-prod">搜尋商品</button>
+                        <button type="button" class="search-btn search-store">搜尋商店</button>
                     </div>
                     <div id="user-func">
-                        <div>
+                        <div class="personal-port-wrap">
                             <a href="#" class="my-store">
-                                <i class="icon-user"></i>
+                                <div class="icon-user-wrap">
+                                    <i class="icon-user"></i>
+                                </div>
                                 <span>我的商城</span>
                             </a>
                             <a href="#" class="login-page">
                                 <span>登入</span>
                             </a>
                         </div>
-                        <div>
-                            <i class="icon-wpforms"></i>
-                            <a href="#">訂單查詢</a>
+                        <div class="order-wrap">
+                            <a href="#">
+                                <i class="icon-wpforms"></i>
+                                <span>訂單查詢</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -63,12 +67,73 @@
     <main>
         <div class="container">
             <section id="sidebar">
-                <div class="category-menu"></div>
-                <div class="recom"></div>
-                <div class="pic-ad"></div>
+                <ul class="category-menu">
+                    <li><a href="#">服飾/內睡衣</a></li>
+                    <li><a href="#">美妝/藥妝/髮品</a></li>
+                    <li><a href="#">鞋包/精品/配飾</a></li>
+                    <li><a href="#">婦幼/玩具/益智</a></li>
+                    <li><a href="#">電腦/週邊</a></li>
+                    <li><a href="#">家電/影音</a></li>
+                    <li><a href="#">相機/手機/電玩</a></li>
+                    <li><a href="#">美食/纖體/保健</a></li>
+                    <li><a href="#">清潔/醫療/寵物</a></li>
+                    <li><a href="#">居家/寢具/家具</a></li>
+                    <li><a href="#">運動/戶外/交通</a></li>
+                    <li><a href="#">餐券/娛樂/旅遊</a></li>
+                    <li><a href="#">圖書/文具/影音</a></li>
+                </ul>
+                <ul class="recom">
+                    <li>
+                        <h4>今日我最殺</h4>
+                        <a href="#">超贈點最高25倍</a>
+                    </li>
+                    <li>
+                        <h4>一起Buy了啦！</h4>
+                        <a href="#">FUN肆運動</a>
+                    </li>
+                    <li>
+                        <h4>3C會招失速下殺</h4>
+                        <a href="#">美妝保健現折88</a>
+                    </li>
+                </ul>
+                <ul class="pic-ad">
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/123/150" alt="">
+                            <p>自主經營模式</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/123/392" alt="">
+                            <p>限時好康限量送<br>7-11超取登記送中冰美</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="https://picsum.photos/123/150" alt="">
+                            <p>新店報到<br>好康搶先看</p>
+                        </a>
+                    </li>
+                </ul>
             </section>
             <section id="content">
-                <div id="top-carousel" class="carousel"></div>
+                <div id="top-carousel" class="carousel">
+                    <div class="wrap">
+                        <div class="img-box">
+                            <div>
+                                <a href="#" class="adImg active"></a>
+                                <img src="https://picsum.photos/id/1048/1068/380" alt="ad img">
+                            </div>
+                            <!-- <a href="#" class="active"><img src="https://picsum.photos/id/1029/1068/380" alt="ad img"></a>
+                            <a href="#" class="active"><img src="https://picsum.photos/id/1031/1068/380" alt="ad img"></a> -->
+                        </div>
+                        <div class="carousel-controls">
+                            <div class="btn prev-btn"><i class="icon-left-open"></i></div>
+                            <div class="btn next-btn"><i class="icon-right-open"></i></div>
+                        </div>
+                    </div>
+                </div>
                 <div class="sale 3-blocks"></div>
                 <div class="personal-recom 3-blocks">
                     <h3>你可能會喜歡</h3>
