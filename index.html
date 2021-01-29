@@ -38,8 +38,8 @@
                         <div class="input-wrap">
                             <input type="text" placeholder="請輸入 商品 或 商店 關鍵字">
                         </div>
-                        <button type="button" class="search-btn search-prod">搜尋商品</button>
-                        <button type="button" class="search-btn search-store">搜尋商店</button>
+                        <button type="button" class="search-btn search-prod btn">搜尋商品</button>
+                        <button type="button" class="search-btn search-store btn">搜尋商店</button>
                     </div>
                     <div id="user-func">
                         <div class="personal-port-wrap">
@@ -119,7 +119,7 @@
             </section>
             <section id="content">
                 <div id="top-carousel" class="carousel">
-                    <div class="wrap">
+                    <div class="carousel-wrap">
                         <div class="slide-box active">
                             <a href="#" class="carouselImg"></a>
                             <img src="https://picsum.photos/id/1048/1068/380" alt="carousel img">
@@ -132,8 +132,8 @@
                             <a href="#" class="carouselImg"></a>
                             <img src="https://picsum.photos/id/1043/1068/380" alt="carousel img">
                         </div>
-                        <div class="carousel-btn prev-btn"><i class="icon-left-open-big"></i></div>
-                        <div class="carousel-btn next-btn"><i class="icon-right-open-big"></i></div>
+                        <div class="carousel-btn prev-btn btn"><i class="icon-left-open-big"></i></div>
+                        <div class="carousel-btn next-btn btn"><i class="icon-right-open-big"></i></div>
                     </div>
                 </div>
                 <div id="sale" class="d-grid blocks-3">
@@ -163,9 +163,9 @@
                     </div>
                     <div class="carousel">
                         <div class="slide-box d-grid blocks-3">
-                            <div class="block-1-3">
+                            <div class="block-1-3 ellipses-text">
                                 <h5><i class="icon-box watson-icon"></i> 屈臣氏Watsons</h5>
-                                <div class="rows-2">
+                                <div class="d-grid rows-2">
                                     <a href="#"><img src="https://picsum.photos/345/94" alt=""></a>
                                     <div class="d-grid blocks-4">
                                         <a href="#"><img src="https://picsum.photos/76" alt=""></a>
@@ -174,11 +174,11 @@
                                         <a href="#"><img src="https://picsum.photos/76" alt=""></a>
                                     </div>
                                 </div>
-                                <p><span class="sale-icon">優惠</span>特價再9折-蘇菲娜漾緁控油/水潤瓷效妝前隔離乳12345678901112</p>
+                                <p class="ellipses-text"><span class="sale-icon">優惠</span>特價再9折-蘇菲娜漾緁控油/水潤瓷效妝前隔離乳12345678901112</p>
                             </div>
                             <div class="block-1-3">
                                 <h5>糖罐子</h5>
-                                <div class="rows-2">
+                                <div class="d-grid rows-2">
                                     <a href="#"><img src="https://picsum.photos/345/94" alt=""></a>
                                     <div class="d-grid blocks-4">
                                         <a href="#"><img src="https://picsum.photos/76" alt=""></a>
@@ -187,11 +187,11 @@
                                         <a href="#"><img src="https://picsum.photos/76" alt=""></a>
                                     </div>
                                 </div>
-                                <p><span class="sale-icon">優惠</span>春夏優惠專區五折</p>
+                                <p class="ellipses-text"><span class="sale-icon">優惠</span>春夏優惠專區五折</p>
                             </div>
                             <div class="block-1-3">
                                 <h5>小豬兒 Mini Jule</h5>
-                                <div class="rows-2">
+                                <div class="d-grid rows-2">
                                     <a href="#"><img src="https://picsum.photos/345/94" alt=""></a>
                                     <div class="d-grid blocks-4">
                                         <a href="#"><img src="https://picsum.photos/76" alt=""></a>
@@ -201,61 +201,715 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="carousel-btn prev-btn"><i class="icon-left-open-big"></i></div>
+                            <!-- <div class="carousel-btn prev-btn"><i class="icon-left-open-big"></i></div> -->
                             <div class="carousel-btn next-btn"><i class="icon-right-open-big"></i></div>
                         </div>
                     </div>
                 </div>
-                <div class="categories">
+                <div id="categories">
                     <section id="fashion">
                         <div class="head">
                             <h3>時尚流行</h3>
                             <span class="page-text">第<span class="page-text-num">一</span>頁</span>
                         </div>
-                        <div class="carousel">
+                        <div class="carousel-wrap">
                             <div class="slide-box d-grid blocks-3">
                                 <div class="block-1-3">
-                                    <a href="#"><img src="https://picsum.photos/344/520" alt=""></a>
+                                    <a href="#" class="slide-box active"><img src="https://picsum.photos/id/106/344/520" alt=""></a>
+                                    <a href="#" class="slide-box"><img src="https://picsum.photos/id/1069/344/520" alt=""></a>
+                                    <a href="#" class="slide-box"><img src="https://picsum.photos/id/1079/344/520" alt=""></a>
+                                    <div class="carousel-dots">
+                                        <span class="carousel-dot btn active"></span>
+                                        <span class="carousel-dot btn"></span>
+                                        <span class="carousel-dot btn"></span>
+                                    </div>
                                 </div>
-                                <div class="block-1-3"></div>
-                                <div class="block-1-3"></div>
+                                <div class="block-1-3">
+                                    <div class="d-grid rows-2">
+                                        <a href="#" class="slide-box active block-product">
+                                            <img src="https://picsum.photos/id/349/344/168" alt="">
+                                            <div class="prod-info-pane">
+                                                <h4 class="pane-title ellipses-text">LEVI'S&circledR; X PEANUTS&circledR;限量聯名</h4>
+                                                <p class="pane-subtitle ellipses-text">Levi's官方旗艦店</p>
+                                            </div>
+                                        </a>
+                                        <div class="d-grid blocks-2">
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/360/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">線上特賣限時3折起</h4>
+                                                    <p class="pane-subtitle ellipses-text">Folli Folli</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/360/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">線上特賣限時3折起</h4>
+                                                    <p class="pane-subtitle ellipses-text">Folli Folli</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/360/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">線上特賣限時3折起</h4>
+                                                    <p class="pane-subtitle ellipses-text">Folli Folli</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/360/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">線上特賣限時3折起</h4>
+                                                    <p class="pane-subtitle ellipses-text">Folli Folli</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-1-3">
+                                    <div class="d-grid blocks-2">
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/365/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">MIUSTAR 正韓．兩件式123456</p>
+                                                <p class="pane-original-price ellipses-text">$550</p>
+                                                <p class="pane-sale-price ellipses-text"><span class="event-tag">活動</span><span class="sold-price">$450</span> 起</p>
+                                                <p class="pane-store-name ellipses-text">Miu-Star</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/365/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">MIUSTAR 正韓．微性感123456</p>
+                                                <p class="pane-original-price ellipses-text">$250</p>
+                                                <p class="pane-sale-price ellipses-text"><span class="event-tag">活動</span><span class="sold-price">$220</span> 起</p>
+                                                <p class="pane-store-name ellipses-text">Miu-Star</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/365/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">【五折價$399】糖罐子123456</p>
+                                                <p class="pane-original-price ellipses-text">$798</p>
+                                                <p class="pane-sale-price ellipses-text"><span class="event-tag">活動</span><span class="sold-price">$399</span> 起</p>
+                                                <p class="pane-store-name ellipses-text">Miu-Star</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/365/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">MIUSTAR 正韓．兩件式123456</p>
+                                                <p class="pane-original-price sold-price ellipses-text">$750</p>
+                                                <p class="pane-sale-price ellipses-text"></p>
+                                                <p class="pane-store-name ellipses-text">LuLu's</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
-                            <div id="brands-row"></div>
+                            <!-- <div class="carousel-btn prev-btn btn"><i class="icon-left-open-big"></i></div> -->
+                            <div class="carousel-btn next-btn btn"><i class="icon-right-open-big"></i></div>
+                        </div>
+                        <div id="brands-row">
+                            <a href="#"><img src="https://picsum.photos/184/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/148/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/58/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/100/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/94/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/103/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/232/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/184/40" alt=""></a>
+                            <a href="#"><img src="https://picsum.photos/128/40" alt=""></a>
                         </div>
                     </section>
-                    <section id="3C d-grid blocks-3">
-                        <h3>3C數位</h3>
-                        <div class="carousel">
-                            <div class="slide-box d-grid blocks-3">
-
+                    <section id="digital">
+                        <div class="head">
+                            <h3>3C數位</h3>
+                            <div>
+                                <a href="#" class="ad-contact">我要曝光</a>
+                                <span class="page-text">第<span class="page-text-num">一</span>頁</span>
                             </div>
                         </div>
-                    </section>
-                    <section id="life d-grid blocks-3">
-                        <h3>品味生活</h3>
-                        <div class="carousel">
+                        <div class="carousel-wrap">
                             <div class="slide-box d-grid blocks-3">
-
+                                <div class="block-1-3">
+                                    <a href="#" class="slide-box active"><img src="https://picsum.photos/id/370/344/520" alt=""></a>
+                                    <a href="#" class="slide-box"><img src="https://picsum.photos/id/1069/344/520" alt=""></a>
+                                    <a href="#" class="slide-box"><img src="https://picsum.photos/id/1079/344/520" alt=""></a>
+                                    <div class="carousel-dots">
+                                        <span class="carousel-dot btn active"></span>
+                                        <span class="carousel-dot btn"></span>
+                                        <span class="carousel-dot btn"></span>
+                                    </div>
+                                </div>
+                                <div class="block-1-3">
+                                    <div class="d-grid rows-2">
+                                        <a href="#" class="slide-box active block-product">
+                                            <img src="https://picsum.photos/id/250/344/168" alt="">
+                                            <div class="prod-info-pane">
+                                                <h4 class="pane-title ellipses-text">多功能手持攪拌棒(多件組)MX-SS2</h4>
+                                                <p class="pane-subtitle ellipses-text">Panasonic 國際牌</p>
+                                            </div>
+                                        </a>
+                                        <div class="d-grid blocks-2">
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/367/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">【限量下殺87折】Samsung 123456</h4>
+                                                    <p class="pane-subtitle ellipses-text">神腦生活</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/367/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">禾聯 HDF14AH730</h4>
+                                                    <p class="pane-subtitle ellipses-text">神腦生活</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/367/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">AirPods Pro 藍芽耳機</h4>
+                                                    <p class="pane-subtitle ellipses-text">神腦生活</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/367/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">【免運 防水漂流袋123456】</h4>
+                                                    <p class="pane-subtitle ellipses-text">嘟嘟屋</p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-1-3">
+                                    <div class="d-grid blocks-2">
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/504/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">【預付卡/儲值卡】中華電信123456</p>
+                                                <p class="pane-original-price sold-price ellipses-text">$500</p>
+                                                <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                                <p class="pane-store-name ellipses-text">中華電信預付卡</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/504/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">【預付卡/儲值卡】中華電信123456</p>
+                                                <p class="pane-original-price sold-price ellipses-text">$1000</p>
+                                                <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                                <p class="pane-store-name ellipses-text">中華電信預付卡</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/504/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">2.1A 快充線 充電線 傳輸線123456</p>
+                                                <p class="pane-original-price ellipses-text">$39</p>
+                                                <p class="pane-sale-price ellipses-text"><span class="event-tag">活動</span><span class="sold-price">$19</span> 起</p>
+                                                <p class="pane-store-name ellipses-text">DA量販店</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/504/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">【預付卡/儲值卡】中華電信123456</p>
+                                                <p class="pane-original-price sold-price ellipses-text">$699</p>
+                                                <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                                <p class="pane-store-name ellipses-text">中華電信預付卡</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
                             </div>
+                            <!-- <div class="carousel-btn prev-btn btn"><i class="icon-left-open-big"></i></div> -->
+                            <div class="carousel-btn next-btn btn"><i class="icon-right-open-big"></i></div>
+                        </div>
+                    </section>
+                    <section id="life">
+                        <div class="head">
+                            <h3>品味生活</h3>
+                            <div>
+                                <a href="#" class="ad-contact">我要曝光</a>
+                                <span class="page-text">第<span class="page-text-num">一</span>頁</span>
+                            </div>
+                        </div>
+                        <div class="carousel-wrap">
+                            <div class="slide-box d-grid blocks-3">
+                                <div class="block-1-3">
+                                    <a href="#" class="slide-box active"><img src="https://picsum.photos/id/513/344/520" alt=""></a>
+                                    <a href="#" class="slide-box"><img src="https://picsum.photos/id/1069/344/520" alt=""></a>
+                                    <a href="#" class="slide-box"><img src="https://picsum.photos/id/1079/344/520" alt=""></a>
+                                    <div class="carousel-dots">
+                                        <span class="carousel-dot btn active"></span>
+                                        <span class="carousel-dot btn"></span>
+                                        <span class="carousel-dot btn"></span>
+                                    </div>
+                                </div>
+                                <div class="block-1-3">
+                                    <div class="d-grid rows-2">
+                                        <a href="#" class="slide-box active block-product">
+                                            <img src="https://picsum.photos/id/625/344/168" alt="">
+                                            <div class="prod-info-pane">
+                                                <h4 class="pane-title ellipses-text">入冬新品，全館7折起</h4>
+                                                <p class="pane-subtitle ellipses-text">
+                                                    <i class="icon-box"></i>DUYAN 竹漾寢飾
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <div class="d-grid blocks-2">
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/30/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">快速出貨 UV100 抗UV123456</h4>
+                                                    <p class="pane-subtitle ellipses-text">
+                                                        <i class="icon-box"></i>UV100專業機能防UV123456
+                                                    </p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/30/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">【The North Face】</h4>
+                                                    <p class="pane-subtitle ellipses-text">悠遊山水戶外生活館</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/30/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">CHUMS Logo T-Shirts</h4>
+                                                    <p class="pane-subtitle ellipses-text">GO WILD 野聚戶外</p>
+                                                </div>
+                                            </a>
+                                            <a href="#" class="block-product">
+                                                <img src="https://picsum.photos/id/30/167/168" alt="">
+                                                <div class="prod-info-pane">
+                                                    <h4 class="pane-title ellipses-text">ADISI 男款2MM連身123456</h4>
+                                                    <p class="pane-subtitle ellipses-text">
+                                                        <i class="icon-box"></i>城市綠洲單車戶外運動blahblahblah
+                                                    </p>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="block-1-3">
+                                    <div class="d-grid blocks-2">
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/20/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                                <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                                <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                                <p class="pane-store-name ellipses-text">BG Shop</p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/20/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">立得清酒精擦濕巾90抽</p>
+                                                <p class="pane-original-price sold-price ellipses-text">$120</p>
+                                                <p class="pane-sale-price ellipses-text"><span class="event-tag">活動</span><span class="sold-price">$99</span> 起</p>
+                                                <p class="pane-store-name ellipses-text">
+                                                    <i class="icon-box"></i>屈臣氏Watsons
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/20/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">超服貼3D立體口罩(S號)</p>
+                                                <p class="pane-original-price ellipses-text">$200</p>
+                                                <!-- <p class="pane-sale-price ellipses-text"><span class="event-tag">活動</span><span class="sold-price">$19</span> 起</p> -->
+                                                <p class="pane-store-name ellipses-text">
+                                                    <i class="icon-box"></i>專品藥局
+                                                </p>
+                                            </div>
+                                        </a>
+                                        <a href="#" class="block-product">
+                                            <img src="https://picsum.photos/id/20/167/256" alt="">
+                                            <div class="prod-info-pane bg-white">
+                                                <p class="pane-item-name ellipses-text">雨晴牌-三層不織布口罩</p>
+                                                <p class="pane-original-price sold-price ellipses-text">$239</p>
+                                                <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                                <p class="pane-store-name ellipses-text">雨晴牌-專利口罩-MIT精品館</p>
+                                            </div>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- <div class="carousel-btn prev-btn btn"><i class="icon-left-open-big"></i></div> -->
+                            <div class="carousel-btn next-btn btn"><i class="icon-right-open-big"></i></div>
                         </div>
                     </section>
                     <section id="items-on-sale">
-                        <h3>促銷優惠</h3>
-                        <div class="carousel d-grid blocks-6">
-                            <div class="slide-box d-grid blocks-3">
-
+                        <div class="head">
+                            <h3>促銷優惠</h3>
+                            <div>
+                                <a href="#" class="ad-contact">我要曝光</a>
+                                <span class="page-text">第<span class="page-text-num">一</span>頁</span>
                             </div>
+                        </div>
+                        <div class="carousel-wrap">
+                            <div class="slide-box d-grid blocks-6">
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="block-1-6">
+                                    <a href="#" class="block-product">
+                                        <img src="https://picsum.photos/id/824/167/256" alt="">
+                                        <div class="prod-info-pane bg-white">
+                                            <p class="pane-item-name ellipses-text">-現貨-淨新 醫用防菌三入組</p>
+                                            <p class="pane-original-price sold-price ellipses-text">$399</p>
+                                            <!-- <p class="pane-sale-price ellipses-text"></p> -->
+                                            <p class="pane-store-name ellipses-text">BG Shop</p>
+                                        </div>
+                                    </a>
+                                </div>
+                            </div>
+                            <!-- <div class="carousel-btn prev-btn btn"><i class="icon-left-open-big"></i></div> -->
+                            <div class="carousel-btn next-btn btn"><i class="icon-right-open-big"></i></div>
                         </div>
                     </section>
                 </div>
-                <div id="promo"></div>
-                <div id="themes"></div>
+                <div id="promo">
+                    <div class="d-grid blocks-4">
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                        <div class="block-1-4">
+                            <a href="#"><img src="https://picsum.photos/id/977/256/110" alt=""></a>
+                        </div>
+                    </div>
+                </div>
+                <div id="themes">
+                    <div class="d-grid blocks-3">
+                        <div class="block-1-3 theme">
+                            <h3>超夯主題-全部靈感</h3>
+                            <div class="theme-content">
+                                <a href="#"><img src="https://picsum.photos/120" alt=""></a>
+                                <div class="keywords">
+                                    <a href="#">票券</a>
+                                    <a href="#">彩妝</a>
+                                    <a href="#">電競</a>
+                                    <a href="#">福利品</a>
+                                    <a href="#">寵物</a>
+                                    <a href="#">香水</a>
+                                    <a href="#">金飾</a>
+                                    <a href="#">年菜</a>
+                                    <a href="#">尿布</a>
+                                    <a href="#">咖啡</a>
+                                    <a href="#">衛生紙</a>
+                                    <a href="#">親子裝</a>
+                                    <a href="#">療癒系</a>
+                                    <a href="#">春酒尾牙</a>
+                                    <a href="#">明星開店</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-1-3 theme">
+                            <h3>超夯主題-全部靈感</h3>
+                            <div class="theme-content">
+                                <a href="#"><img src="https://picsum.photos/120" alt=""></a>
+                                <div class="keywords">
+                                    <a href="#">票券</a>
+                                    <a href="#">彩妝</a>
+                                    <a href="#">電競</a>
+                                    <a href="#">福利品</a>
+                                    <a href="#">寵物</a>
+                                    <a href="#">香水</a>
+                                    <a href="#">金飾</a>
+                                    <a href="#">年菜</a>
+                                    <a href="#">尿布</a>
+                                    <a href="#">咖啡</a>
+                                    <a href="#">衛生紙</a>
+                                    <a href="#">親子裝</a>
+                                    <a href="#">療癒系</a>
+                                    <a href="#">春酒尾牙</a>
+                                    <a href="#">明星開店</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-1-3 theme">
+                            <h3>超夯主題-全部靈感</h3>
+                            <div class="theme-content">
+                                <a href="#"><img src="https://picsum.photos/120" alt=""></a>
+                                <div class="keywords">
+                                    <a href="#">票券</a>
+                                    <a href="#">彩妝</a>
+                                    <a href="#">電競</a>
+                                    <a href="#">福利品</a>
+                                    <a href="#">寵物</a>
+                                    <a href="#">香水</a>
+                                    <a href="#">金飾</a>
+                                    <a href="#">年菜</a>
+                                    <a href="#">尿布</a>
+                                    <a href="#">咖啡</a>
+                                    <a href="#">衛生紙</a>
+                                    <a href="#">親子裝</a>
+                                    <a href="#">療癒系</a>
+                                    <a href="#">春酒尾牙</a>
+                                    <a href="#">明星開店</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-1-3 theme">
+                            <h3>超夯主題-全部靈感</h3>
+                            <div class="theme-content">
+                                <a href="#"><img src="https://picsum.photos/120" alt=""></a>
+                                <div class="keywords">
+                                    <a href="#">票券</a>
+                                    <a href="#">彩妝</a>
+                                    <a href="#">電競</a>
+                                    <a href="#">福利品</a>
+                                    <a href="#">寵物</a>
+                                    <a href="#">香水</a>
+                                    <a href="#">金飾</a>
+                                    <a href="#">年菜</a>
+                                    <a href="#">尿布</a>
+                                    <a href="#">咖啡</a>
+                                    <a href="#">衛生紙</a>
+                                    <a href="#">親子裝</a>
+                                    <a href="#">療癒系</a>
+                                    <a href="#">春酒尾牙</a>
+                                    <a href="#">明星開店</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-1-3 theme">
+                            <h3>超夯主題-全部靈感</h3>
+                            <div class="theme-content">
+                                <a href="#"><img src="https://picsum.photos/120" alt=""></a>
+                                <div class="keywords">
+                                    <a href="#">票券</a>
+                                    <a href="#">彩妝</a>
+                                    <a href="#">電競</a>
+                                    <a href="#">福利品</a>
+                                    <a href="#">寵物</a>
+                                    <a href="#">香水</a>
+                                    <a href="#">金飾</a>
+                                    <a href="#">年菜</a>
+                                    <a href="#">尿布</a>
+                                    <a href="#">咖啡</a>
+                                    <a href="#">衛生紙</a>
+                                    <a href="#">親子裝</a>
+                                    <a href="#">療癒系</a>
+                                    <a href="#">春酒尾牙</a>
+                                    <a href="#">明星開店</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="block-1-3 theme">
+                            <h3>超夯主題-全部靈感</h3>
+                            <div class="theme-content">
+                                <a href="#"><img src="https://picsum.photos/120" alt=""></a>
+                                <div class="keywords">
+                                    <a href="#">票券</a>
+                                    <a href="#">彩妝</a>
+                                    <a href="#">電競</a>
+                                    <a href="#">福利品</a>
+                                    <a href="#">寵物</a>
+                                    <a href="#">香水</a>
+                                    <a href="#">金飾</a>
+                                    <a href="#">年菜</a>
+                                    <a href="#">尿布</a>
+                                    <a href="#">咖啡</a>
+                                    <a href="#">衛生紙</a>
+                                    <a href="#">親子裝</a>
+                                    <a href="#">療癒系</a>
+                                    <a href="#">春酒尾牙</a>
+                                    <a href="#">明星開店</a>
+                                </div>
+                            </div>
+                        </div>                
+                    </div>
+                </div>
+                <footer>
+                    <div class="d-grid blocks-2">
+                        <div id="info" class="d-grid blocks-3">
+                            <ul class="payment">
+                                <li class="info-title">付款方式</li>
+                                <li><a href="#">超商取貨付款</a></li>
+                                <li><a href="#">信用卡分期</a></li>
+                                <li><a href="#">信用卡紅利折抵</a></li>
+                                <li><a href="#">ATM</a></li>
+                            </ul>
+                            <ul class="member">
+                                <li class="info-title">付款方式</li>
+                                <li><a href="#">我的帳戶</a></li>
+                                <li><a href="#">折價券查詢</a></li>
+                                <li><a href="#">電子報訂閱或取消</a></li>
+                                <li><a href="#">如何獲得超贈點</a></li>
+                            </ul>
+                            <ul class="service">
+                                <li class="info-title">客戶服務</li>
+                                <li><a href="#">常見問題</a></li>
+                                <li><a href="#">訂單查詢</a></li>
+                                <li><a href="#">客服幫幫我</a></li>
+                            </ul>
+                        </div>
+                        <div id="promises" class="d-grid blocks-4">
+                            <div class="promise">
+                                <div class="promise-img"><i class="icon-ok"></i></div>
+                                <h5>交易安全</h5>
+                                <p>金流代收最安心</p>
+                            </div>
+                            <div class="promise">
+                                <div class="promise-img"><i class="icon-ok"></i></div>
+                                <h5>7日鑑賞</h5>
+                                <p>退貨免運費</p>
+                            </div>
+                            <div class="promise">
+                                <div class="promise-img"><i class="icon-ok"></i></div>
+                                <h5>優良商店</h5>
+                                <p>商店評核制度</p>
+                            </div>
+                            <div id="bsi">
+                                <img src="https://picsum.photos/110/52" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </footer>
             </section>
         </div>
     </main>
-    <footer>
-        <div class="container"></div>
-    </footer>
     
 </body>
 </html>
