@@ -144,8 +144,8 @@ a {
 #func-top .func {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: .6fr auto 1fr;
-      grid-template-columns: .6fr auto 1fr;
+  -ms-grid-columns: 1fr 4.5fr auto;
+      grid-template-columns: 1fr 4.5fr auto;
   padding: 27px 0 57px 0;
 }
 
@@ -175,28 +175,24 @@ a {
   font-family: "NotoSansTC-Medium";
 }
 
-#func-top .input-wrap {
+#func-top #search .input-wrap {
   display: inline-block;
   border-style: solid;
   border-width: thin;
   border-radius: 3px;
   border-color: #5CC5E2;
   height: 36px;
-  width: 550px;
+  width: 73%;
   padding: 1px;
 }
 
-#func-top input[type="text"] {
+#func-top #search input[type="text"] {
   height: 100%;
   width: 100%;
   border: 0;
   outline-color: #5CC5E2;
   padding: 13px;
   font-size: 14px;
-}
-
-#func-top #search {
-  margin-right: 54px;
 }
 
 #func-top #search .search-btn {

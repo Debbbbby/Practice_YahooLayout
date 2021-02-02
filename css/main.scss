@@ -116,7 +116,7 @@ a {
 	background-color: #D4F1F5;
 	.func {
 		display: grid;
-		grid-template-columns: .6fr auto 1fr;
+		grid-template-columns: 1fr 4.5fr auto;
 		padding: 27px 0 57px 0;
 	}
 	.logo-name {
@@ -137,26 +137,27 @@ a {
 			font-family: "NotoSansTC-Medium";
 		}
 	}
-	.input-wrap {
-		display: inline-block;
-		border-style: solid;
-		border-width: thin;
-		border-radius: 3px;
-		border-color: #5CC5E2;
-		height: 36px;
-		width: 550px;
-		padding: 1px;
-	}
-	input[type="text"] {
-		height: 100%;
-		width: 100%;
-		border: 0;
-		outline-color: #5CC5E2;
-		padding: 13px;
-		font-size: 14px;
-	}
 	#search {
-		margin-right: 54px;
+		// margin-right: 54px;
+		.input-wrap {
+			display: inline-block;
+			border-style: solid;
+			border-width: thin;
+			border-radius: 3px;
+			border-color: #5CC5E2;
+			height: 36px;
+			// width: 550px;
+			width: 73%;
+			padding: 1px;
+		}
+		input[type="text"] {
+			height: 100%;
+			width: 100%;
+			border: 0;
+			outline-color: #5CC5E2;
+			padding: 13px;
+			font-size: 14px;
+		}
 		.search-btn {
 			height: 35px;
 			width: 82px;
