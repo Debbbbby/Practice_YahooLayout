@@ -497,7 +497,7 @@ main div.container {
   font-size: 12px;
 }
 
-#content .prod-info-pane .pane-item-name, #content .prod-info-pane .pane-original-price {
+#content .prod-info-pane .pane-item-name, #content .prod-info-pane .pane-original-price, #content .prod-info-pane .pane-sale-price {
   font-size: 13px;
   color: #636363;
   font-family: "NotoSansTC-Regular";
